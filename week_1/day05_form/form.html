@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Animation</title>
+    <link href="form.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Contact US</legend>
+        <form action="mailto:yenw@missionreadyhq.com" method="post">
+            <!-- LABEL FIELD FOR TEXT AND INPUT -->
+            <label>Name:</label><input type="text" name="name" 
+                required placeholder="Fill in your first name."><br/>
+    
+            <label>Email:</label><input type="email" name="email"
+                required placeholder="Fill in with your personal email."><br/>
+            
+            <!-- SELECTION OF RADIO BUTTONS -->
+            <input type="radio" id="sales" name="subject" value="sales"/>
+            <label for="sales">Sales</label><br/>
+    
+            <input type="radio" id="support" name="subject" value="support"/>
+            <label for="support">Support</label><br/>
+    
+            <input type="radio" id="others" name="subject" value="others"/>
+            <label for="others">Others</label><br/>
+
+            <!-- MESSAGE TEXT AREA -->
+            <label>Message:</label><br/>
+            <textarea></textarea><br/>
+    
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Submit"/>
+        </form>
+    </fieldset>
+
+    <div>
+        <p>Hi</p>
+    </div>
+</body>
+
+</html>
+
+<!-- Inline CSS > Internal CSS(id) > External CSS(id) 
+    > Internal CSS(class) > External CSS(class) > Internal CSS(element) > External CSS(element)
+Front one can override the back one.
+-->

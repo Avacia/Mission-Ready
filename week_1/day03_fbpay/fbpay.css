@@ -1,0 +1,8 @@
+body{
+    font-family: "Tahoma";
+}
+
+main{
+    display:flex;
+    background-color: skyblue;
+}

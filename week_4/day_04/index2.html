@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+
+        $("button").click(function () {
+            alert("Old HTML: " + $('#test').html());
+            // pop up alert, and shows "Old HTML....." with the content for id:test.
+            //change the innerHTML to Hello World.
+            $('#test').html('<b>Hello World!</b>').css('background', 'pink');
+
+            console.log($('input').val());
+        });
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2 id="test">This is Heading</h2>>
+    <button>Click me to set heading</button>
+    <input type="text" />
+  </body>
+</html>

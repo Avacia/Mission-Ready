@@ -1,0 +1,33 @@
+#parent{
+    display:flex;
+    background-color: lightblue;
+    height:100vh;
+    width:100vw;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+}
+
+#child{
+    background-color: pink;
+    width: 50%;
+    height: 50%;
+    font-size: 1rem;
+    text-align: center;
+    /*rem relative to font-size of the root element */
+    /*% relative to the value of parent element*/
+    /*em relative to the font-size of the parent element*/
+    /*vh eqaul to 1% of the height of the brower window size*/
+    /*vw equal to 1% of the width of the brower window size*/
+    /*px absolute length in pixel*/
+}
+
+html{
+    font-size:32px;
+}
+
+body{
+    /*close the white edge of the border*/
+    box-sizing: border-box;
+    margin:0px;
+}

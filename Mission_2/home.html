@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Ready - Mission 2</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    </head>
+
+    <body>
+        <!-- Top of the webpage -->
+        <header>
+            <!-- Icon Location -->
+            <div onclick="myFunc()">
+                <i class="fa-solid fa-power-off fa-fade" style="color: #886df5; font-size:20px;">mode</i>
+            </div>
+
+            <!-- Function that switch from light mode to dark mode -->
+            <script>
+                function myFunc(){
+                    let element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+            
+            <!-- Page Tags Location -->
+            <nav>
+                <ul>
+                    <li class="nav btn-link">
+                        <button style="border:none; border-radius:10px; box-shadow:0px 0px 2px 2px rbg(black);"><a href="/Mission_2/home.html">Home</a></button>
+                    </li>
+
+                    <li class="nav btn-link">
+                        <button style="border:none; border-radius:10px; box-shadow:0px 0px 2px 2px rbg(black);"><a href="/Mission_2/about.html">About</a></button>
+                    </li>
+
+                    <li class="nav btn-link">
+                        <button style="border:none; border-radius:10px; box-shadow:0px 0px 2px 2px rbg(black);"><a href="/Mission_2/project.html">Project</a></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <main>
+            <h1>Welcome To My Portfolio</h1>
+        </main>
+        <div>
+            <ul class="icon-list">
+                <li>
+                    <a class= "icon" href="yenw@missionreadyhq.com">
+                        <i class="fa-solid fa-envelope fa-flip" style="font-size:20px;"></i> yenw@missionreadyhq.com</a>
+                </li>
+
+                <li> 
+                    <a class= "icon" href="+6401234568789">
+                        <i class="fa-solid fa-phone" style="font-size:20px;"></i>+640123456789</a>
+                </li>
+
+                <li>
+                    <a class= "icon" href="https://github.com/Avacia/learning-git.git">
+                        <i class="fa-brands fa-github" style="font-size:20px"></i></a>
+                </li>           
+            </ul>
+        </div>
+    </body>    
+</html>

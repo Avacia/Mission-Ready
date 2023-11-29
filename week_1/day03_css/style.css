@@ -1,0 +1,66 @@
+h1{
+    font-size: 90px;
+    color: white;
+}
+
+h3{
+    color:white;
+
+}
+
+p {
+    padding: 30px;
+    border: 2px;
+    color: white;
+}
+
+body{
+    line-height: 30px;
+    background-color: black;
+}
+
+.title{
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.intro{
+    padding: 30px;
+    color: white;
+}
+
+.meal{
+    line-height: 50px;
+    margin-left: 200px;
+    color: white;
+    display: inline-block;
+    border-style: solid;
+    border-color: aqua;
+}
+
+.dessert{
+    line-height: 50px;
+    margin-left: 200px;
+    color: white;
+    display: inline-block;
+    border-style: solid;
+    border-color: aqua;
+}
+
+.images{
+    margin-left:200px;
+    width: 50%;
+    height: 50%;
+}
+
+.image{
+    padding:5px;
+    width: 30%;
+    height: 30%;
+}
+
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Shopping List -->
+    <h1>Shopping List</h1>
+    <br />
+    <form>
+        <input type="text" id="item" placeholder="Item. eg: Tomato">
+        <span>x</span>
+        <input type="number" id="quantity" placeholder="Quantity. eg: 1">
+        <button class="btn" onclick="addItem(event)">Add to List</button>
+    </form>
+    <p id="shopping-list-display"></p>
+
+    <!-- Shopping Basket -->
+    <hr>
+    <h1>Shopping Basket</h1>
+    <p>Enter all the products you've put into your shopping basket, seperated by commas,to see if you've forgotten anything.</p>
+    <form>
+        <input type="text" id="textfield" placeholder="Item, Item2...">
+        <button class="btn2" onclick="displayItem(event)">Put item in basket</button>
+    </form>
+
+    <p>Here are the items you still need to get:</p>
+    <p id="shopping-basket"></p>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="college.js"></script>
+    <style>
+        img{
+            width:60%;
+            height:auto;
+        }
+        .rotate{
+            transform:rotate(-90deg);
+        }
+        ul{
+            display:flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            flex: 0 0 33.33333333%
+        }
+        body{
+            background-color: black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        #image_input{
+            color:white;
+            width: 375px;
+            height: 211px;
+            border: 1px solid black;
+            background-position: center;
+            background-size: cover;
+        }
+        label{
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src=".\photo\college\367374711_2659725517514728_5672994633303085780_n.jpg" alt="kkb"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\367900515_7142571662461065_272690295190593861_n.jpg" alt="stage-band-1"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\370223364_1013300273265831_6195936473578092928_n.jpg" alt="stage-band-2"/>
+        </li>
+        <li>
+            <img src=".\photo\college\377221193_359794246494620_8229408329947691710_n.jpg" alt="abrsm-lvl3"/>
+        </li>
+        <li>
+            <img src=".\photo\college\368051813_714665097225552_7984963748262330150_n.jpg" alt="abrsm-lvl5"/>
+        </li>
+        <li>
+            <img src=".\photo\college\371452417_2285960168458848_7861238115741685951_n.jpg" alt="trinity-lvl6"/>
+        </li>
+        <li>
+            <img src=".\photo\college\368565948_1113056163013287_6933523669054117094_n.jpg" alt="mc-graduation-certificate"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\371491338_868662431277965_7717680899883628963_n.jpg" alt="peer-support"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\367374711_6677611925620409_6703168193370595300_n.jpg" alt="athletics-1"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\385538813_371128895267690_4183966321888499604_n.jpg" alt="athletics-2"/>
+        </li>
+        <li>
+            <img class="rotate" src=".\photo\college\386836900_259210316749599_8944488256624039440_n.jpg" alt="athletics champ"/>
+        </li>
+        <li id="display_image">
+                
+        </li>
+        
+    </ul>
+    <a href="/Mission_2/about.html"><i class="fa-solid fa-backward" style="color: white; font-size:50px;"></i></a>
+    <br />
+
+    <label for='inputFile'>Choose a picture to upload: </label>
+    <input name='inputFile' type="file" id="image_input" accept="image/png, image/jpg" style="margin-left:300px;">
+
+</body>
+</html>

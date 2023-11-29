@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #main{
+            display:flex;
+            background-color: red;
+            justify-content: center; /*change direction on the x-axis.*/
+            gap: 50px;
+            flex-direction: column; /*change direction on different devices. */
+            align-items: center; /*algin change direction on the y-axis.*/
+            flex-wrap: wrap;/*sets whether flex items are forced onto one line or can wrap onto multiple lines*/
+        }
+
+        .child-1{
+            background-color: pink;
+            height: 100px;
+        }
+
+        .child-2{
+            background-color: lightblue;
+            height: 100px;
+        }
+
+        .child-3{
+            background-color: lightgreen;
+            height: 100px;
+        }
+
+        .child-4{
+            background-color: lightsalmon;
+            height: 100px;
+        }
+
+        .child-5{
+            background-color: lightgrey;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="child-1">My First box</div>
+        <div class="child-2">My Second box</div>
+        <div class="child-3">My Third box</div>
+        <div class="child-4">My Forth box</div>
+        <div class="child-5">My Fifth box</div>
+    </div>
+</body>
+</html>

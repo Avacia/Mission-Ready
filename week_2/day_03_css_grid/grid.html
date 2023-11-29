@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr) is the same as writing 1fr three times*/
+            grid-template-rows: repeat(3, 1fr);
+            width:80%;
+            column-gap: 30px;
+            row-gap: 10px;
+            /* if used gap then it will apply to columns and rows*/
+        }
+
+        .child-1{
+            background-color: pink;
+            height: 100px;
+        }
+        
+        .child-2{
+            background-color: blue;
+        }
+
+        .child-3{
+            background-color:yellow;
+        }
+
+        .child-4{
+            background-color:green;
+        }
+
+        .child-5{
+            background-color: orange;
+            grid-column: 2 /4;
+            /* spam the column from column 2 to 4*/
+        }
+
+        .child-6{
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="child-1">1 box</div>
+        <div class="child-2">2 box</div>
+        <div class="child-3">3 box</div>
+        <div class="child-4">4 box</div>
+        <div class="child-5">5 box</div>
+        <div class="child-6">6 box</div>
+
+    </div>
+</body>
+</html>

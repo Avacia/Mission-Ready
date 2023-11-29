@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@600&family=Raleway:wght@500&display=swap');
+
+/* Head */
+nav{
+    border-bottom: 2px solid black;
+}
+
+nav > ul{
+    margin-top:0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+li{
+    padding:18px;
+    list-style-type: none;
+}
+
+a:link, a:visited{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Timeline */
+body{
+    background-color: black;
+}
+
+.timeline{
+    /*horizontally center the timeline*/
+    margin:0 auto;
+    max-width: 750px;
+    padding:25px;
+    display:grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: 'Agbalumo', sans-serif;
+    color:white;
+}
+
+.timeline_component{
+    margin:0 20px 20px 20px;
+}
+
+.timeline_date_right{
+    text-align: right;
+}
+
+.timeline_middle{
+    /*to align with starting circle, use relative to position*/
+    position:relative;
+    background-color: white;
+}
+
+.timeline_point{
+    position:absolute;
+    top:0;
+    left:40%;
+    /*transform the item along the x-axis*/
+    transform:translateX(-50%);
+    width:15px;
+    height:15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.timeline_component_background{
+    padding:1.5em;
+    background:grey;
+    box-shadow: 0 0 5px grey;
+    border-radius: 10px;
+}
+.timeline_component_background:hover{
+    animation: beat 1s ease infinite;
+}
+
+.timeline_component_bottom{
+    margin-bottom: 0;;
+}
+
+.timeline_title{
+    margin:0;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.timeline_paragraph{
+    line-height:1.5;
+}
+
+.timeline_point_bottom{
+    top:initial;
+    bottom:0;
+
+}
+
+.fa-solid{
+    animation: beat 1s ease infinite;
+}
+
+@keyframes beat {
+    0%{
+        transform :scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+        opacity:0.6;
+    }
+}

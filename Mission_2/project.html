@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        *{
+            overflow: hidden;
+        }
+        
+        div > i{
+            position: absolute;
+            left: 15px;
+            top:15px;
+            font-size: 200%;
+        }
+        
+        i:hover{
+            cursor: pointer;
+        }
+        
+        nav > ul{
+            margin-top:0;
+            display:flex;
+            justify-content: flex-end;
+        }
+        
+        li{
+            padding:18px;
+            list-style-type: none;
+        }
+        
+        a:link, a:visited{
+            color:black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        body{
+            background-image: url('https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMxNzUyMC1pbWFnZS1rd3lyeTEzci5qcGc.jpg?s=qydy0KLTMULo3yEaBq8VzBhFhdLrhXhv1jN3ttB2e_I');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        main{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding-top:12%;
+        }
+        
+        fieldset{
+            border-color: black;
+            line-height: 200%;
+            color:black;
+        }
+        
+        input[type=submit]{
+            color:white;
+            background-color: black;    
+        }
+
+        input[type=submit]:hover{
+            cursor: pointer;
+        }
+
+        /* Keep things at its position after screen size change */
+        @media screen and (max-height:600px){
+            body{
+                font-size: 20px;
+                background-image: url('https://pbs.twimg.com/media/FGo2ktmWYAQN2px?format=jpg&name=4096x4096');
+            }
+        }
+
+        @media screen and (max-width:1000px){
+            body{
+                font-size: 20px;
+                background-image: url('https://pbs.twimg.com/media/FGo2ktmWYAQN2px?format=jpg&name=4096x4096');
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top of the webpage -->
+    <header>
+        <!-- Icon and tags location -->
+        <nav>
+            <ul>
+                <li class="nav btn-link">
+                    <a href="/Mission_2/home.html">Home</a>
+                </li>
+
+                <li class="nav btn-link">
+                    <a href="/Mission_2/about.html">About</a>
+                </li>
+
+                <li class="nav btn-link">
+                    <a href="/Mission_2/project.html">Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sending personal info to the owner -->
+        <fieldset>
+            <legend>Info</legend>
+            <form action="mailto:yenw@missionreadyhq.com" method="post">
+                <label>Name:</label><input type="text" name="name" required placeholder="First name"/><br />
+                <label>Email:</label><input type="email" name="email" required placeholder="Email"/><br />
+                <input type='submit' name="submit" value="submit" onclick="redirect()">
+            </form>
+        </fieldset>
+        <script>    
+            function redirect(){
+                location.href='/Mission_2/password.html'
+            }
+        </script>
+    </main>
+
+</body>
+</html>

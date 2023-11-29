@@ -1,0 +1,106 @@
+body{
+    font-family: "Tahoma";
+}
+
+/*parent div to child class "a"*/
+div.a{
+    position:relative;
+    left:35%;
+    color:black;
+    text-decoration: none;
+}
+
+a:active{
+    /*when click, the content will change the color.*/
+    color:red;
+}
+
+span{
+    color:#396ee1;
+}
+
+/*parent nav directly to child ul*/
+nav > ul{
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    margin:50px 100px;
+}
+
+.btn{
+    background-color: rgb(201, 198, 198);
+    text-align: center;
+    font-size: 16px;
+}
+
+.nav-link{
+    list-style:none;
+    margin:2px 5px;
+    padding:8px 15px;
+}
+
+.nav-link:hover{
+    /*when mouse move on to it, the color will change*/
+    background-color: #386ee1;
+    color:white;
+    cursor:pointer;
+    /*the shape of the mouse*/
+}
+
+
+
+main{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+
+#left{
+    width:55%;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.chat-btn{
+    display:block;
+    position: relative;
+    left:36%;
+    margin:20px 0px;
+    padding:14px 25px;
+    width:200px;
+    font-family: inherit;
+    font-weight: 700;
+    border:none;
+}
+
+.chat-btn:hover{
+    background-color: #396ee1;
+    color: white;
+    cursor:pointer;
+}
+
+
+
+#right{
+    text-align: center;
+    width:55%;
+}
+
+#image{
+    background-image: url("https://flipweb.org/wp-content/uploads/2019/11/Facebook-Pay.png");
+    width:80%;
+    height:80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the DOM</title>
+    <!-- defer tells the browser not to wait for the script. Browser will continue to process the HTML, build DOM.
+        Script will be loads in the background and runs when the DOM is fully built. -->
+    <script src="dom.js" defer></script>
+</head>
+<body>
+    <h1>Dom</h1>
+    <h1>Dom2</h1>
+    <h1>Dom3</h1>
+    <button class="btn" onclick="changeColor()">Change Color</button>
+    <button class="btn" onclick="colorPlate()">Color Plate</button>
+    <p id="p-tag"> Hi </p>
+    <h2 id="h2">I am learning javascript.</h2>
+
+    <h3>Counter: <span id="counter">0</span></h3>
+    <button class="btn counter" onclick="count()">click count</button>
+
+
+    <br />
+    <br />
+    <!-- Event Listener -->
+    <div id="divId"> Whoa! A Div! </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- Input Field -->
+   <!--  <label> Some input: </label>
+    <input type="text" oninput="logValue(event)"/>
+    <label> Some input2: </label>
+    <input id='label-2' type="text"/> -->
+<!--     <label> Some Input: </label>
+    <input type="text" oninput='logValue(event)'/>
+    <p>Character count: <span id="ex2">0</span></p> -->
+
+    <label>Num1: </label>
+    <input  id="1" type="text">
+    <br/>
+    <br/>
+    <label >Num2: </label>
+    <input id="2" type="text">
+    <p>result: <span id="ex3"></span></p>
+    <button id="btn">Sum</button>
+
+
+</body>
+</html>

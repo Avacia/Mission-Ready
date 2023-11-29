@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mission Ready - Mission 1</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    </head>
+
+    <body>
+        <!-- Top of the webpage -->
+        <header>
+            <!-- Icon Location -->
+            <div onclick="myFunc()">
+                <i class="fa-solid fa-power-off fa-fade" style="color: #886df5; font-size:20px;">mode</i>
+            </div>
+
+            <!-- Function that switch from light mode to dark mode -->
+            <script>
+                function myFunc(){
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+            
+            <!-- Page Tags Location -->
+            <nav>
+                <ul>
+                    <li class="nav btn-link">
+                        <a href="/Mission_1/home.html">Home</a>
+                    </li>
+
+                    <li class="nav btn-link">
+                        <a href="/Mission_1/about.html">About</a>
+                    </li>
+
+                    <li class="nav btn-link">
+                        <a href="/Mission_1/project.html">Project</a>
+                    </li>
+
+                    <li class="nav btn-link">
+                        <a href="/Mission_1/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <main>
+            <h1>Welcome To Yen's Profolio</h1>
+        </main>
+    </body>    
+</html>

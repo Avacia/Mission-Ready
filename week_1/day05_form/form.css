@@ -1,0 +1,111 @@
+input{
+    width:40%
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text], input[type=email]{
+    padding:2px 2px;
+    margin:8px 0;
+    border:none;
+    border-bottom:2px solid red;
+}
+
+input[type=radio]{
+    width:20px;
+}
+
+input[type=radio] + label{
+    color:black;
+}
+
+textarea{
+    border:2px solid black;
+}
+
+input[type=submit]{
+    background-color: black;
+    color:white;
+    width:30%;
+}
+
+/*======Transition======*/
+div{
+    width:100px;
+    height:100px;
+    position:relative;
+    /*background-color: blanchedalmond;*/
+    transition: 2s;
+    border-radius:50%;
+    animation-name: example;
+    animation-duration: 2s;
+    text-align: center;
+}
+/*animation-iteration-count*/
+/* transition-delay
+    Delay the transition
+*/
+/* transition-duration
+    sets the length of time a transition animation should take to complete.
+*/
+/* transition-timing-function
+    sets how intermediate values are calculated for CSS properties being affected by a transition effec.
+*/
+
+div:hover{
+    width:200px;
+    height:200px;
+    background-color:red;
+}
+
+@keyframes example {
+    0% {background: blanchedalmond;left: 0px; top:0px;}
+    20% {background-color: green;left:20px; top: 20px;}
+    100% {background-color: red;left:100px; top:100px;}
+}
+
+
+
+/* div + p {
+
+    }
+will be select if the p tag is directly after the div tag.
+example:
+    <div>
+        <p>1</p>
+        <p>2</p>
+    </div>
+
+    1 will be the only element that is selected from the selection.
+*/
+/* div p{
+    
+    }
+will select all the <p> for the one that is under <div>
+*/
+
+/* div > p{
+
+    }
+will select all <p> that is directly under a <div>
+example:
+    <div>
+        <p>1</p>
+        <section>
+            <p>2</p>
+        </section>
+        <p>3</p>
+    </div>
+1 and 3 will be selected since it is directly under <div>.
+*/
+
+/* div ~ p{
+    
+    }
+will select the silbiling of the for <div> and <p>
+example:
+    <div>.....
+    
+*/

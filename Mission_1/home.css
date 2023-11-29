@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@600&family=Raleway:wght@500&display=swap');
+
+*{
+    overflow: hidden;
+}
+
+/* Tags for page*/
+.dark-mode{
+    background-color: black;
+    color:white; 
+    border-bottom: 10px solid white;
+}
+
+nav{
+    border-bottom: 2px solid black;
+}
+
+div > i{
+    position: absolute;
+    left: 15px;
+    top:15px;
+    font-size: 200%;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+nav > ul{
+    margin-top:0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+li{
+    padding:18px;
+    list-style-type: none;
+}
+
+a:link, a:visited{
+    color:rgb(131, 129, 129);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* main screen display*/
+main > h1{
+    text-align:center;
+    padding-top: 15%;
+    font-family:'Raleway';
+    font-size: 70px;
+    transition: 2s;
+}
+
+h1:before{
+    content:'';
+    position: absolute;
+    left:120%;
+    width:120%;
+    height: 15%;
+    background:linear-gradient(90deg, transparent 0%, black 5%, black 100%);
+    animation-delay: 25s;
+    animation: animate 10s linear forwards infinite;
+}
+
+h1:after{
+    content:'';
+    position: absolute;
+    left:120%;
+    width:120%;
+    height: 15%;
+    background:linear-gradient(90deg, transparent 0%, white 5%, white 100%);
+    animation: animate 10s linear forwards infinite;
+}
+
+body{
+    background-color: white;
+    color:black;
+}
+
+/* animation */
+@keyframes animate {
+    0%{
+        left:-20%;
+    }
+    50%{
+        left: 120%;
+    }
+    100%{
+        left:-20%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 70px;
+    }
+}

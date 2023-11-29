@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: darksalmon;
+            border:solid 2px red;
+            height:1000px;
+            position:relative;
+        }
+        .child{
+            background-color: skyblue;
+            border: solid 2px black;
+            position:absolute;
+            top:50px;
+            left:50px;
+            z-index:1;
+        }
+
+        .child2{
+            background-color: green;
+            border: solid 2px black;
+            position:absolute;
+            top:40px;
+            left:50px;
+            z-index:2;
+        }
+
+        /* position-fixed will let the content stick on the position where it located when the page is moving.*/
+        /* position-relative will relate to the position in the webpage and relocate new position once the page is moved.*/
+        /* position-sticky will stick on a position once the page has scroll down to a sertain level.*/
+    </style>
+</head>
+<body>
+    <div class="parent">Parent</div>
+    <div class="child">Child</div>
+    <div class="child2">Child2</div>
+</body>
+</html>

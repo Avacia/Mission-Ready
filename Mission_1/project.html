@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        *{
+            overflow: hidden;
+        }
+        
+        div > i{
+            position: absolute;
+            left: 15px;
+            top:15px;
+            font-size: 200%;
+        }
+        
+        i:hover{
+            cursor: pointer;
+        }
+        
+        nav > ul{
+            margin-top:0;
+            display:flex;
+            justify-content: flex-end;
+        }
+        
+        li{
+            padding:18px;
+            list-style-type: none;
+        }
+        
+        a:link, a:visited{
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        body{
+            background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjI2MTMzNTM5MjUtaW1hZ2Uta3A0dzFscHAuanBn.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        main{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding-top:12%;
+        }
+        
+        fieldset{
+            border-color: white;
+            line-height: 200%;
+            color:white;
+        }
+        
+        input[type=submit]{
+            color:white;
+            background-color: black;    
+        }
+
+        input[type=submit]:hover{
+            cursor: pointer;
+        }
+
+        /* Keep things at its position after screen size change */
+        @media screen and (max-height:600px){
+            body{
+                font-size: 20px;
+                background-image: url('https://pbs.twimg.com/media/FGo2ktmWYAQN2px?format=jpg&name=4096x4096');
+            }
+        }
+
+        @media screen and (max-width:1000px){
+            body{
+                font-size: 20px;
+                background-image: url('https://pbs.twimg.com/media/FGo2ktmWYAQN2px?format=jpg&name=4096x4096');
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top of the webpage -->
+    <header>
+        <!-- Icon and tags location -->
+        <nav>
+            <ul>
+                <li class="nav btn-link">
+                    <a href="/Mission_1/home.html">Home</a>
+                </li>
+
+                <li class="nav btn-link">
+                    <a href="/Mission_1/about.html">About</a>
+                </li>
+
+                <li class="nav btn-link">
+                    <a href="/Mission_1/project.html">Project</a>
+                </li>
+
+                <li class="nav btn-link">
+                    <a href="/Mission_1/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sending personal info to the owner -->
+        <fieldset>
+            <legend>Info</legend>
+            <form action="mailto:yenw@missionreadyhq.com" method="post">
+                <label>Name:</label><input type="text" name="name" required placeholder="First name"/><br />
+                <label>Email:</label><input type="email" name="email" required placeholder="Email"/><br />
+                <input class="btn" onclick="location.href='/Mission_1/password.html'" type="submit" value="Submit"/>
+            </form>
+        </fieldset>
+
+        <script type="text/javascript">
+            document.getElementsByClassName("btn").onclick=function(){
+                location.href='/Mission_1/password.html'
+            };
+        </script>
+    </main>
+
+</body>
+</html>
